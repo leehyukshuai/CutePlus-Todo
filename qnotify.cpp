@@ -37,14 +37,14 @@
 
 QNotify::QNotify( QWidget *parent ) :
     QWidget( parent )
-{    
-    QPixmapCache::insert( "success.png", QPixmap( ":/icons/success.png" ).scaledToHeight( 80, Qt::SmoothTransformation ) );
-    QPixmapCache::insert( "error.png", QPixmap( ":/icons/error.png" ).scaledToHeight( 80, Qt::SmoothTransformation ) );
-    QPixmapCache::insert( "warning.png", QPixmap( ":/icons/warning.png" ).scaledToHeight( 80, Qt::SmoothTransformation ) );
-    
+{
+    QPixmapCache::insert( "success.png", QPixmap( ":/icon/icon/success.png" ).scaledToHeight( 80, Qt::SmoothTransformation ) );
+    QPixmapCache::insert( "error.png", QPixmap( ":/icon/icon/error.png" ).scaledToHeight( 80, Qt::SmoothTransformation ) );
+    QPixmapCache::insert( "warning.png", QPixmap( ":/icon/icon/warning.png" ).scaledToHeight( 80, Qt::SmoothTransformation ) );
+
     animation = new QPropertyAnimation( this, "geometry" );
     connect( animation, SIGNAL(finished()), SLOT(onFinished()) );
-    
+
     // defaults
     w = 800;
     x = parent->width() - w - 10;
@@ -81,7 +81,7 @@ void QNotify::notify( QString text, NotificationType type, int duration )
     notifType = type;
     keepDuration = duration;
     repaint();
-    
+
     animation->setDuration( 500 );
     animation->setStartValue( QRect( x, -100, w, 100 ) );
     animation->setEndValue( QRect( x, y, w, 100 ) );

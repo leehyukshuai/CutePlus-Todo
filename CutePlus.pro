@@ -52,4 +52,4 @@ HEADERS += \
     qnotify.h
 
 RESOURCES += \
-    icons.qrc \
+    resources.qrc

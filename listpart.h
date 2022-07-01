@@ -7,6 +7,7 @@
 #include <QVBoxLayout>
 #include <QMenu>
 #include <QFile>
+#include <QFileInfo>
 #include <QDataStream>
 #include <QMouseEvent>
 #include "listwidget.h"

@@ -30,7 +30,7 @@ void ListPart::setIndex(int index)
 void ListPart::save()
 {
     QFile file("data.bin");
-    if (file.open(QIODevice::WriteOnly)) {
+    if (file.open(QIODevice::ReadWrite)) {
         QDataStream stream(&file);
         for (int i = 0; i < listWidget->count(); ++i) {
             ListItem *listItem = static_cast<ListItem *>(listWidget->item(i));
@@ -43,12 +43,13 @@ void ListPart::save()
 void ListPart::read()
 {
     QFile file("data.bin");
-    file.open(QIODevice::ReadOnly);
-    QDataStream stream(&file);
-    while (!stream.atEnd()) {
-        ListItem *listItem = new ListItem;
-        stream >> *listItem;
-        addListItem(listItem);
+    if (file.open(QIODevice::ReadOnly)) {
+        QDataStream stream(&file);
+        while (!stream.atEnd()) {
+            ListItem *listItem = new ListItem;
+            stream >> *listItem;
+            addListItem(listItem);
+        }
     }
 }
 

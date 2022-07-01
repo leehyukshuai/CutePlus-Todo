@@ -6,8 +6,8 @@ ListWidget::ListWidget(QWidget *parent) : QListWidget(parent)
     menu = new QMenu(this);
     QAction *modifyAction = new QAction(tr("Modify"));
     QAction *deleteAction = new QAction(tr("Delete"));
-//    modifyAction->setIcon(QIcon(":/icons/modify.png"));
-//    deleteAction->setIcon(QIcon(":/icons/delete.png"));
+//    modifyAction->setIcon(QIcon(":/icon/icon/modify.png"));
+//    deleteAction->setIcon(QIcon(":/icon/icon/delete.png"));
     menu->addAction(modifyAction);
     menu->addAction(deleteAction);
     connect(deleteAction, SIGNAL(triggered(bool)), this, SLOT(onDeleteActionTriggered()));

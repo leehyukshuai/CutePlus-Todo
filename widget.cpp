@@ -46,7 +46,7 @@ Widget::Widget(QWidget *parent)
                             "QPushButton:hover{border-bottom:3px solid rgb(84, 192, 151);}QPushButton:focus{border-bottom:2px solid rgb(84, 147, 140);}"
                             );
     this->setWindowTitle("CutePlus Todo");
-    this->setWindowIcon(QIcon(":/icons/icon.png"));
+    this->setWindowIcon(QIcon(":/icon/icon/icon.png"));
     this->setLayout(mainLayout);
     this->resize(1500, 1000);
     this->read();
@@ -95,5 +95,6 @@ void Widget::switchToTaskItemDetailWidget(TaskItem *item)
 
 void Widget::callWarningTip(QString string)
 {
+    qDebug() << "nn";
     notice->notify(string, QNotify::WARNING);
 }

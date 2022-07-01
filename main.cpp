@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QTranslator translator;
-    translator.load("cute.qm");
+    translator.load(":/translation/transl/cute.qm");
     a.installTranslator(&translator);
     Widget w;
     w.show();

@@ -9,12 +9,11 @@ TreeWidget::TreeWidget(QWidget *parent) : QTreeWidget(parent)
     QAction *backwardAction = new QAction(tr("BackWard"));
     QAction *toTopAction = new QAction(tr("To top"));
     QAction *toBottomAction = new QAction(tr("To Bottom"));
-
-    deleteAction->setIcon(QIcon(":/icons/delete_c.png"));
-    forwardAction->setIcon(QIcon(":/icons/up.png"));
-    backwardAction->setIcon(QIcon(":/icons/down.png"));
-    toTopAction->setIcon(QIcon(":/icons/top.png"));
-    toBottomAction->setIcon(QIcon(":/icons/bottom.png"));
+    deleteAction->setIcon(QIcon(":/icon/icon/delete_c.png"));
+    forwardAction->setIcon(QIcon(":/icon/icon/up.png"));
+    backwardAction->setIcon(QIcon(":/icon/icon/down.png"));
+    toTopAction->setIcon(QIcon(":/icon/icon/top.png"));
+    toBottomAction->setIcon(QIcon(":/icon/icon/bottom.png"));
 
     menu->addAction(deleteAction);
     menu->addAction(forwardAction);

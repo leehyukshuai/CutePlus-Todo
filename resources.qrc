@@ -1,7 +1,25 @@
 <RCC>
-    <qresource prefix="/">
-        <file alias="error.png">data/error.png</file>
-        <file alias="success.png">data/success.png</file>
-        <file alias="warning.png">data/warning.png</file>
+    <qresource prefix="/icon">
+        <file>icon/bottom.png</file>
+        <file>icon/close.png</file>
+        <file>icon/contact.svg</file>
+        <file>icon/delete.png</file>
+        <file>icon/delete_c.png</file>
+        <file>icon/down.png</file>
+        <file>icon/error.png</file>
+        <file>icon/icon.png</file>
+        <file>icon/important.svg</file>
+        <file>icon/life.svg</file>
+        <file>icon/modify.png</file>
+        <file>icon/normal.svg</file>
+        <file>icon/shopping.svg</file>
+        <file>icon/study.svg</file>
+        <file>icon/success.png</file>
+        <file>icon/top.png</file>
+        <file>icon/up.png</file>
+        <file>icon/warning.png</file>
+    </qresource>
+    <qresource prefix="/translation">
+        <file>transl/cute.qm</file>
     </qresource>
 </RCC>

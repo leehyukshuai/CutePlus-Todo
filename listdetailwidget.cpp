@@ -34,12 +34,12 @@ ListDetailWidget::ListDetailWidget(QWidget *parent) : QWidget(parent)
     QLabel *iconLabel = new QLabel(tr("Icon: "));
     iconInput = new QComboBox;
     QList<QIcon> iconList;
-    iconList << QIcon(":/icons/contact.svg")
-             << QIcon(":/icons/important.svg")
-             << QIcon(":/icons/life.svg")
-             << QIcon(":/icons/normal.svg")
-             << QIcon(":/icons/shopping.svg")
-             << QIcon(":/icons/study.svg");
+    iconList << QIcon(":/icon/icon/contact.svg")
+             << QIcon(":/icon/icon/important.svg")
+             << QIcon(":/icon/icon/life.svg")
+             << QIcon(":/icon/icon/normal.svg")
+             << QIcon(":/icon/icon/shopping.svg")
+             << QIcon(":/icon/icon/study.svg");
     foreach (QIcon icon, iconList) {
         iconInput->addItem(icon, "");
     }
