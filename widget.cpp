@@ -95,6 +95,5 @@ void Widget::switchToTaskItemDetailWidget(TaskItem *item)
 
 void Widget::callWarningTip(QString string)
 {
-    qDebug() << "nn";
     notice->notify(string, QNotify::WARNING);
 }
