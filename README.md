@@ -25,7 +25,8 @@
 
 > 运行截图：
 > 
-> ![1656594967305.png](https://img1.imgtp.com/2022/06/30/KfgSTxqH.png)
+> ![image](https://user-images.githubusercontent.com/95012398/204548000-2bbdd6ce-19aa-4933-9e4d-91027ab272ed.png)
+
 
 > 使用方式：
 > 1.使用Qt构建pro文件(通用)。同时可以把data.bin文件复制到构建生成的文件夹当中查看效果。
@@ -34,8 +35,6 @@
 ## 项目各模块与类设计细节
 
 ### 模块设计
-
-![1656585122877.png](https://img1.imgtp.com/2022/06/30/qUbab4xd.png)
 
 #### MainWidget
 
